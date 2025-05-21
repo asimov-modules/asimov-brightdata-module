@@ -1,0 +1,40 @@
+# See: https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[package]
+name = "asimov-brightdata-module"
+version = "0.0.0"
+authors = ["ASIMOV Protocol <support@asimov.so>"]
+edition = "2024"
+#rust-version = "1.85"
+description = "ASIMOV module for data import powered by the Bright Data web data platform."
+#documentation = "https://docs.rs/asimov-brightdata-module"
+readme = true
+homepage = "https://github.com/asimov-modules"
+repository = "https://github.com/asimov-modules/asimov-brightdata-module"
+license = "Unlicense"
+keywords = ["asimov-module", "asimov", "ai"]
+categories = [
+    "command-line-utilities",
+    "api-bindings",
+    "web-programming::http-client",
+    "text-processing",
+]
+publish = true
+
+[features]
+default = ["all", "std"]
+all = []
+std = ["asimov-module/std"]
+unstable = []
+
+[dependencies]
+asimov-module = { version = "25.0.0-dev.7", default-features = false }
+
+[profile.release]
+opt-level = "z"
+strip = true
+lto = "thin"
+
+[[bin]]
+name = "asimov-brightdata-importer"
+path = "src/main.rs"
