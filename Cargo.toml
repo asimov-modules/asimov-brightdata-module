@@ -23,12 +23,35 @@ publish = true
 
 [features]
 default = ["all", "std"]
-all = []
-std = ["asimov-module/std"]
+all = ["tracing"]
+std = [
+    "asimov-module/std",
+    "clientele/std",
+    "serde/std",
+    "tracing-subscriber?/fmt",
+    "tracing-subscriber?/std",
+]
+tracing = ["dep:tracing-subscriber"]
 unstable = []
 
 [dependencies]
 asimov-module = { version = "25.0.0-dev.7", default-features = false }
+clientele = { version = "0.3", default-features = false, features = [
+    "argfile",
+    "dotenv",
+    "wild",
+] }
+serde = { version = "1", default-features = false, features = ["derive"] }
+serde_json = { version = "1", default-features = false, features = ["alloc"] }
+tracing-subscriber = { version = "0.3", default-features = false, features = [
+    "alloc",
+    "tracing-log",
+], optional = true }
+ureq = { version = "3.0", default-features = false, features = [
+    "platform-verifier",
+    "rustls",
+    "json",
+] }
 
 [profile.release]
 opt-level = "z"
