@@ -4,6 +4,7 @@
 fn main() -> Result<clientele::SysexitsError, Box<dyn std::error::Error>> {
     use asimov_brightdata_module::api::{Dataset, ScrapeInput, ScrapeRequest};
     use clientele::SysexitsError;
+    use secrecy::SecretString;
     use std::str::FromStr;
 
     // Load environment variables from `.env`:
@@ -30,7 +31,7 @@ fn main() -> Result<clientele::SysexitsError, Box<dyn std::error::Error>> {
     }
 
     // Obtain the Bright Data API key from the environment:
-    let api_key = std::env::var("BRIGHTDATA_API_KEY")?;
+    let api_key = SecretString::from(std::env::var("BRIGHTDATA_API_KEY")?);
     let dataset_id = "gd_l1viktl72bvl7bjuj0"; // TODO: this is for LinkedIn only
     let dataset = Dataset::new(dataset_id, api_key);
 
