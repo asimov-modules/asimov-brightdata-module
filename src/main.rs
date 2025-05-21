@@ -41,7 +41,7 @@ fn main() -> Result<clientele::SysexitsError, Box<dyn std::error::Error>> {
     for url in urls {
         // Find the appropriate dataset ID based on the URL prefix:
         let Some(dataset_id) = find_dataset_for(&url) else {
-            return Ok(SysexitsError::EX_UNAVAILABLE); // not found
+            return Ok(SysexitsError::EX_UNAVAILABLE); // not supported
         };
 
         // Send the request and block while waiting for the response:
