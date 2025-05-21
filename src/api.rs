@@ -11,22 +11,23 @@ pub use secrecy::{ExposeSecret, SecretString};
 use asimov_module::prelude::{Box, Result, String, format};
 use core::error::Error;
 
-pub struct Dataset {
-    pub id: String,
+#[derive(Debug)]
+pub struct BrightData {
     pub(crate) api_key: SecretString,
 }
 
-impl Dataset {
-    pub fn new(id: impl AsRef<str>, api_key: SecretString) -> Self {
-        Self {
-            id: id.as_ref().into(),
-            api_key,
-        }
+impl BrightData {
+    pub fn new(api_key: SecretString) -> Self {
+        Self { api_key }
     }
 
-    pub fn scrape(&self, request: &ScrapeRequest) -> Result<String, Box<dyn Error>> {
+    pub fn scrape_dataset(
+        &self,
+        dataset_id: impl AsRef<str>,
+        request: &ScrapeRequest,
+    ) -> Result<String, Box<dyn Error>> {
         let mut response = ureq::post("https://api.brightdata.com/datasets/v3/scrape")
-            .query("dataset_id", &self.id)
+            .query("dataset_id", dataset_id.as_ref())
             .query("include_errors", "true")
             .query("format", "json")
             .header(
