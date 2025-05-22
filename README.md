@@ -105,7 +105,7 @@ X (Twitter) | `https://x.com/` | ✅ | 🚧
 Yahoo | `https://finance.yahoo.com/quote/` | ✅ | 🚧
 YouTube | `https://www.youtube.com/@` | ✅ | 🚧
 &nbsp; | `https://www.youtube.com/watch?v=` | ✅ | 🚧
-<img width="120" height="1"/> | <img width="570" height="1"/> | <img width="70" height="1"/> | <img width="70" height="1"/>
+<img width="100" height="1"/> | <img width="550" height="1"/> | <img width="50" height="1"/> | <img width="50" height="1"/>
 
 ## 👨‍💻 Development
 
