@@ -8,7 +8,7 @@ fn main() -> Result<clientele::SysexitsError, Box<dyn std::error::Error>> {
     };
     use clientele::SysexitsError;
     use secrecy::SecretString;
-    use std::str::FromStr;
+    use std::{io::stdout, str::FromStr};
 
     // Load environment variables from `.env`:
     clientele::dotenv().ok();
@@ -37,7 +37,7 @@ fn main() -> Result<clientele::SysexitsError, Box<dyn std::error::Error>> {
     let api_key = SecretString::from(std::env::var("BRIGHTDATA_API_KEY")?);
     let api = BrightData::new(api_key);
 
-    // Scrape each of the given URL arguments:
+    // Process each of the given URL arguments:
     for url in urls {
         // Find the appropriate dataset ID based on the URL prefix:
         let Some(dataset) = find_dataset_for(&url) else {
@@ -47,7 +47,15 @@ fn main() -> Result<clientele::SysexitsError, Box<dyn std::error::Error>> {
         // Send the request and block while waiting for the response:
         let request = ScrapeRequest::from(vec![ScrapeInput::from_str(&url).unwrap()]);
         let response = api.scrape_dataset(dataset.id, &request)?;
-        println!("{}", response);
+
+        // Serialize the response data:
+        if cfg!(feature = "pretty") {
+            let response_json: serde_json::Value = serde_json::from_str(&response)?;
+            colored_json::write_colored_json(&response_json, &mut stdout())?;
+            println!();
+        } else {
+            println!("{}", response);
+        }
     }
 
     Ok(SysexitsError::EX_OK)

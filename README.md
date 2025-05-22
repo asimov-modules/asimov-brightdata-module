@@ -12,7 +12,7 @@
   Google, Indeed, Instagram, LinkedIn, Walmart, X (aka Twitter), Yahoo, and
   YouTube.
 - Collects the raw JSON data via the Bright Data API (requires an API key).
-- Constructs a semantic knowledge graph based on the [KNOW Ontology].
+- Constructs a semantic knowledge graph based on the [KNOW] ontology.
 - Supports plain JSON output as well as [RDF] output formats such as JSON-LD,
   Turtle, and N-Triples.
 
@@ -124,5 +124,5 @@ git clone https://github.com/asimov-modules/asimov-brightdata-module.git
 [ASIMOV]: https://github.com/asimov-platform
 [Bright Data]: https://brightdata.com/products/web-scraper
 [Bright Data API key]: https://docs.brightdata.com/general/account/api-token
-[KNOW Ontology]: https://know.dev
+[KNOW]: https://github.com/know-ontology
 [RDF]: https://github.com/rust-rdf
