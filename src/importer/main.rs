@@ -40,13 +40,13 @@ fn main() -> Result<clientele::SysexitsError, Box<dyn std::error::Error>> {
     // Scrape each of the given URL arguments:
     for url in urls {
         // Find the appropriate dataset ID based on the URL prefix:
-        let Some(dataset_id) = find_dataset_for(&url) else {
+        let Some(dataset) = find_dataset_for(&url) else {
             return Ok(SysexitsError::EX_UNAVAILABLE); // not supported
         };
 
         // Send the request and block while waiting for the response:
         let request = ScrapeRequest::from(vec![ScrapeInput::from_str(&url).unwrap()]);
-        let response = api.scrape_dataset(dataset_id, &request)?;
+        let response = api.scrape_dataset(dataset.id, &request)?;
         println!("{}", response);
     }
 

@@ -5,13 +5,16 @@
 
 pub mod api;
 
+mod dataset;
 mod datasets;
 
-pub fn find_dataset_for(url: impl AsRef<str>) -> Option<&'static str> {
+use dataset::Dataset;
+
+pub fn find_dataset_for(url: impl AsRef<str>) -> Option<&'static Dataset> {
     let url = url.as_ref();
-    for (url_prefix, dataset_id) in datasets::URL_PREFIX_TO_DATASET_ID.iter().rev() {
+    for (url_prefix, dataset) in datasets::URL_PREFIX_TO_DATASET.iter().rev() {
         if url.starts_with(url_prefix) {
-            return Some(dataset_id);
+            return Some(dataset);
         }
     }
     None // not found

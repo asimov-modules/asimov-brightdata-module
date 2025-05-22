@@ -60,5 +60,13 @@ strip = true
 lto = "thin"
 
 [[bin]]
+name = "asimov-brightdata-cataloger"
+path = "src/cataloger/main.rs"
+
+[[bin]]
+name = "asimov-brightdata-fetcher"
+path = "src/fetcher/main.rs"
+
+[[bin]]
 name = "asimov-brightdata-importer"
-path = "src/main.rs"
+path = "src/importer/main.rs"
