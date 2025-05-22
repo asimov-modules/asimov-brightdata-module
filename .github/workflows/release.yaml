@@ -51,6 +51,7 @@ jobs:
         with:
           target: ${{ matrix.target }}
           artifact-name: ${{ matrix.artifact }}
+          package-name: asimov-brightdata-module
           artifact-prefix: asimov-brightdata-importer
           binary-name: asimov-brightdata-importer
           binary-extension: ${{ matrix.extension }}
