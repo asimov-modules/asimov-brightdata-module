@@ -6,6 +6,16 @@
 
 [ASIMOV] module for data import powered by the [Bright Data] web data platform.
 
+## ✨ Features
+
+- Imports structured data from Airbnb, Amazon, Crunchbase, eBay, Facebook,
+  Google, Indeed, Instagram, LinkedIn, Walmart, X (aka Twitter), Yahoo, and
+  YouTube.
+- Collects the raw JSON data via the Bright Data API (requires an API key).
+- Constructs a semantic knowledge graph based on the [KNOW Ontology].
+- Supports plain JSON output as well as [RDF] output formats such as JSON-LD,
+  Turtle, and N-Triples.
+
 ## 🛠️ Prerequisites
 
 - [Rust](https://rust-lang.org) 1.85+ (2024 edition)
@@ -41,7 +51,6 @@ asimov-brightdata-fetcher https://www.linkedin.com/company/asimov-protocol/
 ### Fetching Crunchbase Profiles
 
 ```bash
-asimov-brightdata-fetcher https://www.crunchbase.com/person/arto-bendiken
 asimov-brightdata-fetcher https://www.crunchbase.com/organization/near-f896
 ```
 
@@ -107,3 +116,5 @@ git clone https://github.com/asimov-modules/asimov-brightdata-module.git
 [ASIMOV]: https://github.com/asimov-platform
 [Bright Data]: https://brightdata.com/products/web-scraper
 [Bright Data API key]: https://docs.brightdata.com/general/account/api-token
+[KNOW Ontology]: https://know.dev
+[RDF]: https://github.com/rust-rdf
