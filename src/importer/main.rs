@@ -6,7 +6,7 @@ fn main() -> Result<clientele::SysexitsError, Box<dyn std::error::Error>> {
         api::{BrightData, ScrapeInput, ScrapeRequest},
         find_dataset_for,
     };
-    use clientele::SysexitsError;
+    use clientele::SysexitsError::*;
     use secrecy::SecretString;
     use std::{io::stdout, str::FromStr};
 
@@ -30,7 +30,7 @@ fn main() -> Result<clientele::SysexitsError, Box<dyn std::error::Error>> {
         .map(|arg| String::from_str(&arg.to_string_lossy()).unwrap())
         .collect();
     if urls.is_empty() {
-        return Ok(SysexitsError::EX_OK);
+        return Ok(EX_OK);
     }
 
     // Obtain the Bright Data API key from the environment:
@@ -41,7 +41,7 @@ fn main() -> Result<clientele::SysexitsError, Box<dyn std::error::Error>> {
     for url in urls {
         // Find the appropriate dataset ID based on the URL prefix:
         let Some(dataset) = find_dataset_for(&url) else {
-            return Ok(SysexitsError::EX_UNAVAILABLE); // not supported
+            return Ok(EX_UNAVAILABLE); // not supported
         };
 
         // Send the request and block while waiting for the response:
@@ -58,7 +58,7 @@ fn main() -> Result<clientele::SysexitsError, Box<dyn std::error::Error>> {
         }
     }
 
-    Ok(SysexitsError::EX_OK)
+    Ok(EX_OK)
 }
 
 #[cfg(not(feature = "std"))]
