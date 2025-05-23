@@ -32,7 +32,6 @@ dependencies = [
  "clientele",
  "colored_json",
  "jaq-core",
- "secrecy",
  "serde",
  "serde_json",
  "tracing-subscriber",
@@ -41,11 +40,13 @@ dependencies = [
 
 [[package]]
 name = "asimov-module"
-version = "25.0.0-dev.7"
+version = "25.0.0-dev.8"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "d30c3c75bfa39cb078eb22bb2f3c7e32969d37a0e9ee4e05943e75b5a34990f5"
+checksum = "6f87c6daf2d26e98e8ab8c69fa546e9aeaf2161362a85fa9a087ea2e86c2fb97"
 dependencies = [
  "dogma",
+ "getenv",
+ "secrecy",
  "tracing",
 ]
 
@@ -327,11 +328,12 @@ dependencies = [
 
 [[package]]
 name = "getenv"
-version = "0.1.1"
+version = "0.1.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "6a4103f50b0f499ef57a870b1afd716f42dc1bc48a55e692f11cf7c5716d00a6"
+checksum = "08b5c1c21911873fcb901979b0fa4287d3a5ac4296a88cd4764333c0567f26c9"
 dependencies = [
  "dogma",
+ "secrecy",
 ]
 
 [[package]]

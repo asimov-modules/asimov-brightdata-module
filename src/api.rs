@@ -6,7 +6,7 @@ pub use scrape::*;
 mod trigger;
 pub use trigger::*;
 
-pub use secrecy::{ExposeSecret, SecretString};
+pub use asimov_module::secrecy::{ExposeSecret, SecretString};
 
 use asimov_module::prelude::{Box, Result, String, format};
 use core::error::Error;

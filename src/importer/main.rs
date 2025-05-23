@@ -6,8 +6,8 @@ fn main() -> Result<clientele::SysexitsError, Box<dyn std::error::Error>> {
         api::{BrightData, ScrapeInput, ScrapeRequest},
         find_dataset_for,
     };
+    use asimov_module::getenv;
     use clientele::SysexitsError::*;
-    use secrecy::SecretString;
     use std::{io::stdout, str::FromStr};
 
     // Load environment variables from `.env`:
@@ -34,7 +34,9 @@ fn main() -> Result<clientele::SysexitsError, Box<dyn std::error::Error>> {
     }
 
     // Obtain the Bright Data API key from the environment:
-    let api_key = SecretString::from(std::env::var("BRIGHTDATA_API_KEY")?);
+    let Some(api_key) = getenv::var_secret("BRIGHTDATA_API_KEY") else {
+        return Ok(EX_CONFIG); // not configured
+    };
     let api = BrightData::new(api_key);
 
     // Process each of the given URL arguments:
