@@ -13,8 +13,7 @@
   YouTube.
 - Collects the raw JSON data via the Bright Data API (requires an API key).
 - Constructs a semantic knowledge graph based on the [KNOW] ontology.
-- Supports plain JSON output as well as [RDF] output formats such as JSON-LD,
-  Turtle, and N-Triples.
+- Supports plain JSON output as well as [RDF] output in the form of JSON-LD.
 
 ## 🛠️ Prerequisites
 
@@ -37,21 +36,20 @@ export BRIGHTDATA_API_KEY="..."
 ### Fetching X Profiles
 
 ```bash
-asimov-brightdata-fetcher https://x.com/bendiken
-asimov-brightdata-fetcher https://x.com/asimov_protocol
+asimov-brightdata-fetcher https://x.com/bright_init
 ```
 
 ### Fetching LinkedIn Profiles
 
 ```bash
-asimov-brightdata-fetcher https://www.linkedin.com/in/arto/
-asimov-brightdata-fetcher https://www.linkedin.com/company/asimov-protocol/
+asimov-brightdata-fetcher https://www.linkedin.com/in/orlenchner/
+asimov-brightdata-fetcher https://www.linkedin.com/company/bright-data/
 ```
 
 ### Fetching Crunchbase Profiles
 
 ```bash
-asimov-brightdata-fetcher https://www.crunchbase.com/organization/near-f896
+asimov-brightdata-fetcher https://www.crunchbase.com/organization/brightdata
 ```
 
 ### Fetching Amazon Products
@@ -73,7 +71,7 @@ asimov-brightdata-fetcher https://www.amazon.com/Master-Algorithm-Ultimate-Learn
 - `asimov-brightdata-cataloger`: discovers entities via the Bright Data API
   _(not implemented yet)_
 - `asimov-brightdata-fetcher`: collects JSON data from the Bright Data API
-- `asimov-brightdata-importer`: collects and transforms JSON into RDF formats
+- `asimov-brightdata-importer`: collects and transforms JSON into JSON-LD
   _(not implemented yet)_
 
 ### Supported Datasets

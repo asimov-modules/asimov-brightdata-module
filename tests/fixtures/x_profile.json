@@ -1,0 +1,30 @@
+[
+  {
+    "banner_image": null,
+    "biography": "The Bright Initiative was established to drive positive change in the world, using publicly available online data.",
+    "birth_date": null,
+    "category_name": null,
+    "date_joined": null,
+    "external_link": "http://www.brightinitiative.com/",
+    "followers": 65,
+    "following": 33,
+    "id": null,
+    "input": {
+      "url": "https://x.com/bright_init"
+    },
+    "is_business_account": false,
+    "is_government_account": false,
+    "is_verified": false,
+    "location": null,
+    "max_number_of_posts": null,
+    "posts": null,
+    "posts_count": 73,
+    "profile_image_link": null,
+    "profile_name": "thebrightinitiative",
+    "subscriptions": 0,
+    "suggested_profiles": null,
+    "timestamp": "2025-05-27T19:48:17.100Z",
+    "url": "https://x.com/bright_init",
+    "x_id": "1425359125425397772"
+  }
+]

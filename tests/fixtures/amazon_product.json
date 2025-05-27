@@ -1,0 +1,267 @@
+[
+  {
+    "about_the_author": "Pedro Domingos is a professor emeritus of computer science at the University of Washington. He is a winner of the SIGKDD Innovation Award, the highest honor in data science. A fellow of the Association for the Advancement of Artificial Intelligence, he lives near Seattle.",
+    "amazon_choice": false,
+    "answered_questions": 0,
+    "asin": "0465094279",
+    "availability": "In Stock",
+    "badge": null,
+    "brand": "Pedro Domingos",
+    "bs_category": "Robotics (Books)",
+    "bs_rank": 12,
+    "buybox_prices": {
+      "final_price": 11.69,
+      "unit_price": null
+    },
+    "buybox_seller": "Amazon.com",
+    "categories": [
+      "Books",
+      "Computers & Technology",
+      "Computer Science",
+      "AI & Machine Learning",
+      "Expert Systems"
+    ],
+    "climate_pledge_friendly": false,
+    "country_of_origin": null,
+    "currency": "USD",
+    "customer_says": "Customers find the book highly readable, with one noting it's well-written for non-experts, and they appreciate its comprehensive coverage of machine learning concepts. Moreover, the book receives positive feedback for its depth, with one customer highlighting how it combines computer science ideas and intuition. However, customers disagree on the value for money.",
+    "customers_say": {
+      "keywords": {
+        "mixed": [
+          "Value for money"
+        ],
+        "negative": null,
+        "positive": [
+          "Readability",
+          "Knowledge",
+          "Detail",
+          "Coverage"
+        ]
+      },
+      "text": "Customers find the book highly readable, with one noting it's well-written for non-experts, and they appreciate its comprehensive coverage of machine learning concepts. Moreover, the book receives positive feedback for its depth, with one customer highlighting how it combines computer science ideas and intuition. However, customers disagree on the value for money."
+    },
+    "delivery": [
+      "FREE delivery Sunday, June 1 on orders shipped by Amazon over $35",
+      "Or Prime members get FREE delivery Tomorrow, May 28. Order within 6 hrs 34 mins. Join Prime"
+    ],
+    "department": "Books",
+    "description": "Recommended by Bill Gates A thought-provoking and wide-ranging exploration of machine learning and the race to build computer intelligences as flexible as our own In the world's top research labs and universities, the race is on to invent the ultimate learning algorithm: one capable of discovering any knowledge from data, and doing anything we want, before we even ask. In The Master Algorithm, Pedro Domingos lifts the veil to give us a peek inside the learning machines that power Google, Amazon, and your smartphone. He assembles a blueprint for the future universal learner--the Master Algorithm--and discusses what it will mean for business, science, and society. If data-ism is today's philosophy, this book is its bible.",
+    "domain": "https://www.amazon.com/",
+    "downloadable_videos": null,
+    "editorial_reviews": [
+      {
+        "by": "KDNuggets",
+        "review": "\"Wonderfully erudite, humorous, and easy to read.\""
+      },
+      {
+        "by": "Walter Isaacson, New York Times bestselling author of Steve Jobs, The Innovators, and The Code Breaker",
+        "review": "\"Pedro Domingos demystifies machine learning and shows how wondrous and exciting the future will be.\""
+      },
+      {
+        "by": "Daily Beast",
+        "review": "\"An impressive and wide-ranging work that covers everything from the history of machine learning to the latest technical advances in the field.\""
+      },
+      {
+        "by": "New Scientist",
+        "review": "\"Domingos writes with verve and passion.\""
+      },
+      {
+        "by": "Peter Norvig, Director of Research, Google andcoauthor of Artificial Intelligence: A Modern Approach",
+        "review": "\"Unlike other books that proclaim a bright future, this one actually gves you what you need to understand the changes that are coming.\""
+      },
+      {
+        "by": "Duncan Watts, Principal Researcher, Microsoft Research, and author of Six Degrees and Everything Is Obvious *Once You Know the Answer",
+        "review": "\"Domingos is the perfect tour guide from whom you will learn everything you need to know about this exciting field, and a surprising amount about sience and philosophy as well.\""
+      },
+      {
+        "by": "The Economist",
+        "review": "\"[The Master Algorithm] does a good job of examining the field's five main techniques.... The subject is meaty and the author...has a knack for introducing concepts at the right moment.\""
+      },
+      {
+        "by": "Times Higher Education",
+        "review": "\"Domingos is a genial and amusing guide, who sneaks us around the backstage areas of the science in order to witness the sometimes personal (and occasionally acrimonious) tenor of research on the subject in recent decades.\""
+      },
+      {
+        "by": "Booklist, starred review",
+        "review": "\"An exhilarating venture into groundbreaking computer science.\""
+      },
+      {
+        "by": "Kirkus Reviews",
+        "review": "\"[An] enthusiastic but not dumbed-down introduction to machine learning...lucid and consistently informative.... With wit, vision, and scholarship, Domingos decribes how these scientists are creating programs that allow a computer to teach itself. Readers...will discover fascinating insights.\""
+      },
+      {
+        "by": "Data Mining Research",
+        "review": "\"This book is a must have to learn machine learning without equation. It will help you get the big picture of the several learning paradigms. Finally, the provocative idea is not only intriguing, but also very well argued.\""
+      },
+      {
+        "by": "TechCast Global",
+        "review": "\"If you are interested in a crash course on the enigmatic field of machine learning and the challenges for AI practitioners that lie ahead, this book is a great read.\""
+      },
+      {
+        "by": "Judea Pearl, author of The Book of Why, and professor of computer science, UCLA and winner of the A. M. Turing Award",
+        "review": "\"This book is a sheer pleasure, mixed with education. I am recommending it to all my students, those who studied machine learning, those who are about to do it and those who are about to teach it.\""
+      },
+      {
+        "by": "Geoffrey Moore, author of Crossing the Chasm",
+        "review": "\"Machine learning is the single most transformative technology that will shape our lives over the next fifteen years. This book is a must-read--a bold and beautifully written new framework for looking into the future.\""
+      },
+      {
+        "by": "Sebastian Seung, professor, Princeton, and author of Connectome",
+        "review": "\"Machine learning is a fascinating world never before glimpsed by outsiders. Pedro Domingos initiates you to the mysterious languages spoken by its five tribes, and invites you to join in his plan to unite them, creating the most powerful technology our civilization has ever seen.\""
+      },
+      {
+        "by": "Sebastian Thrun, research professor, Stanford, Google Fellow and Inventor of the Self-Driving Car",
+        "review": "\"A delightful book by one of the leading experts in the field. If you wonder how AI will change your life, read this book.\""
+      },
+      {
+        "by": "Thomas H. Davenport, Distinguished Professor, Babson College and author of Competing on Analytics and Big Data @ Work span",
+        "review": "\"This is an incredibly important and useful book. Machine learning is already critical to your life and work, and will only become more so. Finally, Pedro Domingos has written about it in a clear and understandable fashion.\""
+      },
+      {
+        "by": "Eric Siegel, founder of Predictive Analytics World and author of Predictive Analytics: The Power to Predict Who Will Click, Buy, Lie, or Die",
+        "review": "\"Machine learning, known in commercial use as predictive analytics, is changing the world. This riveting, far-reaching, and inspiring book introduces the deep scientific concepts to even non-technical readers, and yet also satisfies experts with a fresh, profound perspective that reveals the most promising research directions. It's a rare gem indeed.\""
+      }
+    ],
+    "final_price": 11.69,
+    "final_price_high": null,
+    "format": [
+      {
+        "name": "Kindle",
+        "price": 13.99,
+        "url": "https://www.amazon.com/Master-Algorithm-Ultimate-Learning-Machine-ebook/dp/B012271YB2/ref=tmm_kin_swatch_0"
+      },
+      {
+        "name": "Audiobook",
+        "price": 0,
+        "url": "https://www.amazon.com/The-Master-Algorithm-audiobook/dp/B014X01SS0/ref=tmm_aud_swatch_0"
+      },
+      {
+        "name": "Hardcover",
+        "price": 23.82,
+        "url": "https://www.amazon.com/Master-Algorithm-Ultimate-Learning-Machine/dp/0465065708/ref=tmm_hrd_swatch_0"
+      }
+    ],
+    "from_the_brand": null,
+    "image_url": "https://m.media-amazon.com/images/I/91g7p3yB-SL._SL1500_.jpg",
+    "images": [
+      "https://m.media-amazon.com/images/I/91g7p3yB-SL._SL1500_.jpg"
+    ],
+    "images_count": 1,
+    "initial_price": 11.69,
+    "input": {
+      "asin": "",
+      "url": "https://www.amazon.com/Master-Algorithm-Ultimate-Learning-Machine/dp/0465094279",
+      "zipcode": ""
+    },
+    "is_available": true,
+    "item_weight": "2.31 pounds",
+    "max_quantity_available": 100,
+    "number_of_sellers": 1,
+    "other_sellers_prices": null,
+    "parent_asin": "0465094279",
+    "plus_content": true,
+    "prices_breakdown": {
+      "deal_type": null,
+      "list_price": null,
+      "typical_price": null
+    },
+    "product_description": [
+      {
+        "type": "image",
+        "url": "https://m.media-amazon.com/images/S/aplus-media-library-service-media/a7d8b3db-b38d-467f-918e-22d4c7a56d6b.__CR0,0,220,220_PT0_SX220_V1___.png"
+      },
+      {
+        "type": "image",
+        "url": "https://m.media-amazon.com/images/S/aplus-media-library-service-media/510d912d-0911-47c8-921b-6f7a4b2c895c.__CR0,0,220,220_PT0_SX220_V1___.png"
+      },
+      {
+        "type": "image",
+        "url": "https://m.media-amazon.com/images/S/aplus-media-library-service-media/875a0ccf-265a-42ab-986a-7056a8c04f82.__CR0,0,220,220_PT0_SX220_V1___.png"
+      },
+      {
+        "type": "image",
+        "url": "https://m.media-amazon.com/images/S/aplus-media-library-service-media/1d79c891-5b65-4a19-8db3-3d987704e0fd.__CR0,0,220,220_PT0_SX220_V1___.png"
+      }
+    ],
+    "product_details": [
+      {
+        "type": "Publisher",
+        "value": "Basic Books"
+      },
+      {
+        "type": "Publication date",
+        "value": "February 13, 2018"
+      },
+      {
+        "type": "Edition",
+        "value": "Reprint"
+      },
+      {
+        "type": "Language",
+        "value": "English"
+      },
+      {
+        "type": "Print length",
+        "value": "352 pages"
+      },
+      {
+        "type": "ISBN-10",
+        "value": "0465094279"
+      },
+      {
+        "type": "ISBN-13",
+        "value": "978-0465094271"
+      },
+      {
+        "type": "Item Weight",
+        "value": "2.31 pounds"
+      },
+      {
+        "type": "Dimensions",
+        "value": "5.45 x 1.2 x 8.25 inches"
+      },
+      {
+        "type": "Best Sellers Rank",
+        "value": null
+      },
+      {
+        "type": "Customer Reviews",
+        "value": "1717"
+      }
+    ],
+    "product_dimensions": "5.45 x 1.2 x 8.25 inches",
+    "rating": 4.3,
+    "reviews_count": 1717,
+    "root_bs_category": "Books",
+    "root_bs_rank": 62656,
+    "seller_id": "ATVPDKIKX0DER",
+    "seller_name": "Amazon.com",
+    "seller_url": "https://www.amazon.com/sp?ie=UTF8&seller=ATVPDKIKX0DER&asin=0465094279",
+    "ships_from": "Amazon.com",
+    "sponsered": false,
+    "store_url": null,
+    "subcategory_rank": [
+      {
+        "subcategory_name": "Robotics (Books)",
+        "subcategory_rank": 12
+      },
+      {
+        "subcategory_name": "Computers & Technology Industry",
+        "subcategory_rank": 62
+      },
+      {
+        "subcategory_name": "Artificial Intelligence & Semantics",
+        "subcategory_rank": 161
+      }
+    ],
+    "sustainability_features": null,
+    "timestamp": "2025-05-27T19:55:59.054Z",
+    "title": "The Master Algorithm: How the Quest for the Ultimate Learning Machine Will Remake Our World",
+    "top_review": "A word of warning: I'm not a machine learning practitioner and not even mathematically inclined. I am merely an average person with a (reasonable) degree of culture (I suppose I classify as a sociologist) looking out to understand the world around me a little better.Yet I loved this book, it opened my eyes on a world I suspected existed somewhere in the depths of my computer or when I did a Google search but that I never understood. If you are afraid to be engulfed in equations, don't be. The author prefers to use allegories and is very good at giving simple explanations, making everything (almost) crystal clear.What you get is a comprehensive overview of where machine learning is going. This is hugely important, considering the sometimes disturbing news you get in the media - not just from Snowden but also from \"neurotechnologists\" who guide political campaigns by embedding cameras in ads, cameras that detect the viewers' reactions and then adjust the campaign in function of these reactions.Perhaps my only quarrel with this book - but it does not detract from its excellence and the five stars I gave it - is the philosophical position taken by the author. I don't quite share his optimism about our robotic future. And this for 2 reasons:One, the connection between learning algorithms and data. Domingos does note at the outset: \"...the more data they [the learners] have, the more intricate the algorithms can be.\" So without \"big data\", you don't get \"good\" learning algorithms - the \"bigger\" the data, the better the algorithm. Or as Domingos writes, \"the more data we have, the more we can learn\". True enough. But what about the quality and size of the big data? What if the data is error-filled and we're not aware of it? Can machine learning be aware of something their human masters are not? On what basis? The algorithms are taught to deal with an imperfect world and draw the most likely conclusions, where \"most likely\" is highly subjective. Or at least, it is \"highly subjective\" in my opinion and I realize that it is only one opinion and not necessarily one shared by the author.Two, the connection between you as you are and an expanded \"digital you\": a \"model\" of who you are, your work experience, your tastes, a model that the algorithm has learned - and thanks to algorithms, you will be able to do more things and faster than ever before. Domingos describes an extraordinary future where, for example, in your LinkedIn account, \"you'll immediately interview for every job in the universe that remotely fits your parameters (profession, location, pay, etc) LinkedIn will respond on the spot with a ranked list of the best prospects, and out of those, you'll pick the first company that you want to have a chat with. Same with dating: your model will go on millions of dates so you don't have to...\"Big time-saver obviously. But it comes at a cost: you have to give your parameters (stuff about your work, your likes and dislikes) to the algorithms. Ye who go digital, leave behind any notion of privacy...So users of this algorithmic landscape will have few shaded areas in which to hide.But for me, privacy concerns aside (and I'm not that concerned, I have nothing to hide), there is yet another matter that I find more worrisome. Domingos (on p.283) tells us he is confident that the future can only get better: \"In fact, it's the systems that have a slight edge in serving us better that will, generation after generation, multiply and take over the gene pool.\" Then he adds: \"Of course, if we're so foolish as to deliberately program a computer to put itself above us, then maybe we'll get what we deserve\".Indeed. That is precisely my worry: can we be sure that there won't be a Doctor Evil who will do so? Can we be sure that there won't be an Apprentice Sorcerer who might end up doing this even if unintentionally? A mistake can happen...So yes, I'm deeply worried about this algorithmic future and I don't share the author's unflagging optimism. But that doesn't mean it's a book you shouldn't read. On the contrary, it's a must read precisely because it raises all these fundamental questions about the future of humanity. And it is an easy read even for the non-cognoscenti like myself, I highly recommend the introductory chapters, and if you get bogged down in the middle with all the technicalities, no fear, skip to the last two chapters, they are well worth reading!",
+    "url": "https://www.amazon.com/Master-Algorithm-Ultimate-Learning-Machine/dp/0465094279?th=1&psc=1&language=en_US&currency=USD",
+    "video": false,
+    "video_count": 0,
+    "videos": null,
+    "zipcode": "11001"
+  }
+]

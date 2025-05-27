@@ -1,0 +1,707 @@
+[
+  {
+    "aberdeen_it_spend": {
+      "currency": "USD",
+      "value": 389100,
+      "value_usd": 389100
+    },
+    "about": "Bright Data offers a platform for ethical web data collection and analysis.",
+    "acquired_by": {
+      "acquirer": "EMK Capital",
+      "acquirer_permalink": "emk-capital",
+      "acquisition_price": {
+        "currency": "USD",
+        "value": 200000000,
+        "value_usd": 200000000
+      },
+      "date": "2017-08-10",
+      "transaction_name": "Bright Data acquired by EMK Capital"
+    },
+    "active_tech_count": 61,
+    "address": "New York, New York, United States, North America",
+    "apptopia": [
+      {
+        "image": "apptopia/app/apptopia_app.1645893250.",
+        "monthly_downloads": 849,
+        "name": "Bright Rewards - Earn cash",
+        "stores": [
+          "itunes_connect"
+        ]
+      },
+      {
+        "image": "apptopia/app/apptopia_app..io.lum.app",
+        "name": "Bright Data EarnApp - Make money from your phone",
+        "stores": [
+          "google_play"
+        ]
+      }
+    ],
+    "apptopia_total_downloads": 849,
+    "apptopia_total_downloads_mom_pct": "-0.0449943757030371",
+    "bombora": [
+      {
+        "category": "marketing",
+        "score": 97,
+        "topic": "Email Marketing Services",
+        "weeks_surging": 2,
+        "wow_growth": 0.0659340659340659
+      },
+      {
+        "category": "media_ad",
+        "score": 97,
+        "topic": "GetsmartContent",
+        "weeks_surging": 4,
+        "wow_growth": 0.182926829268293
+      },
+      {
+        "category": "sales",
+        "score": 97,
+        "topic": "Marketing Automation",
+        "weeks_surging": 3,
+        "wow_growth": 0.328767123287671
+      },
+      {
+        "category": "media_ad",
+        "score": 97,
+        "topic": "Internet Marketing Automation",
+        "weeks_surging": 4,
+        "wow_growth": 0.243589743589744
+      },
+      {
+        "category": "marketing",
+        "score": 97,
+        "topic": "Automated Marketing",
+        "weeks_surging": 3,
+        "wow_growth": 0.328767123287671
+      },
+      {
+        "category": "media_ad",
+        "score": 97,
+        "topic": "Sales and Marketing Automation",
+        "weeks_surging": 3,
+        "wow_growth": 0.328767123287671
+      },
+      {
+        "category": "sales",
+        "score": 96,
+        "topic": "Customer Data Platform",
+        "weeks_surging": 4,
+        "wow_growth": 0.116279069767442
+      },
+      {
+        "category": "marketing",
+        "score": 94,
+        "topic": "Email Marketing Automation",
+        "weeks_surging": 4,
+        "wow_growth": 0.424242424242424
+      },
+      {
+        "category": "business_service",
+        "score": 94,
+        "topic": "Pathlight",
+        "weeks_surging": 2,
+        "wow_growth": 0.492063492063492
+      },
+      {
+        "category": "payments",
+        "score": 93,
+        "topic": "BNY Eagle",
+        "weeks_surging": 1
+      }
+    ],
+    "bombora_last_updated": "2025-05-04",
+    "builtwith_num_technologies_used": 61,
+    "builtwith_tech": [
+      {
+        "name": "DNSSEC",
+        "num_companies_using": "696369",
+        "technology_category": [
+          "ns"
+        ]
+      },
+      {
+        "name": "HSTS",
+        "num_companies_using": "649745",
+        "technology_category": [
+          "ssl"
+        ]
+      },
+      {
+        "name": "Content Delivery Network",
+        "num_companies_using": "589060",
+        "technology_category": [
+          "cdn"
+        ]
+      },
+      {
+        "name": "Google Maps",
+        "num_companies_using": "557257",
+        "technology_category": [
+          "mapping"
+        ]
+      },
+      {
+        "name": "IPv6",
+        "num_companies_using": "412188",
+        "technology_category": [
+          "server"
+        ]
+      },
+      {
+        "name": "Yoast SEO Premium",
+        "num_companies_using": "281641",
+        "technology_category": [
+          "widgets"
+        ]
+      },
+      {
+        "name": "Common Name Invalid",
+        "num_companies_using": "134373",
+        "technology_category": [
+          "ssl"
+        ]
+      },
+      {
+        "name": "Algolia",
+        "num_companies_using": "22203",
+        "technology_category": [
+          "widgets"
+        ]
+      },
+      {
+        "name": "Choopa",
+        "num_companies_using": "11491",
+        "technology_category": [
+          "hosting"
+        ]
+      },
+      {
+        "name": "Vultr",
+        "num_companies_using": "9067",
+        "technology_category": [
+          "hosting"
+        ]
+      }
+    ],
+    "cb_rank": 243637,
+    "company_type": "for_profit",
+    "contact_email": "sales@brightdata.com",
+    "contact_phone": "(888) 538-9204",
+    "contacts": [
+      {
+        "departments": [],
+        "job_title": "Sales Professional",
+        "levels": [
+          "l_300_director"
+        ],
+        "linkedin_id": "libby-gavri",
+        "name": "Libby Gavri"
+      }
+    ],
+    "country_code": "United States",
+    "current_employees": [
+      {
+        "image": "https://images.crunchbase.com/image/upload/c_pad,h_170,w_170,f_auto,b_white,q_auto:eco,dpr_4/m71ngseagpje1dirbzyo",
+        "name": "Or Lenchner",
+        "permalink": "or-lenchner",
+        "title": "Chief Executive Officer"
+      },
+      {
+        "image": "https://images.crunchbase.com/image/upload/c_pad,h_170,w_170,f_auto,b_white,q_auto:eco,dpr_4/v1433567238/f850do27jubfhbt0hi3m.png",
+        "name": "Ofer Vilenski",
+        "permalink": "ofer-vilenski",
+        "title": "Founder"
+      },
+      {
+        "image": "https://images.crunchbase.com/image/upload/c_pad,h_170,w_170,f_auto,b_white,q_auto:eco,dpr_4/fvykm0cmyqh3h6ovt70c",
+        "name": "Omri Orgad",
+        "permalink": "omri-orgad",
+        "title": "Managing Director North America"
+      },
+      {
+        "image": "https://images.crunchbase.com/image/upload/c_pad,h_170,w_170,f_auto,b_white,q_auto:eco,dpr_4/ub0blfv2gnwobzyhypxp",
+        "name": "Keren Pakes",
+        "permalink": "keren-pakes",
+        "title": "VP Brand Marketing and Communications"
+      },
+      {
+        "name": "Avivit Amar",
+        "permalink": "avivit-amar",
+        "title": "Shef"
+      },
+      {
+        "image": "https://images.crunchbase.com/image/upload/c_pad,h_170,w_170,f_auto,b_white,q_auto:eco,dpr_4/n25icmz4zmcel76seei3",
+        "name": "Anna Burukhin",
+        "permalink": "anna-burukhin",
+        "title": "Marketing Design Lead"
+      },
+      {
+        "image": "https://images.crunchbase.com/image/upload/c_pad,h_170,w_170,f_auto,b_white,q_auto:eco,dpr_4/bzrmj25tyal7jtghvdyl",
+        "name": "Nikkie Ni",
+        "permalink": "nikkie-ni",
+        "title": "Regional account executive"
+      },
+      {
+        "image": "https://images.crunchbase.com/image/upload/c_pad,h_170,w_170,f_auto,b_white,q_auto:eco,dpr_4/rapwhwutzomw6ugu4f7t",
+        "name": "Rafael Levi",
+        "permalink": "rafael-levi-af16",
+        "title": "Technical Expert"
+      }
+    ],
+    "event_appearances": [
+      {
+        "appearance_type": "exhibitor",
+        "event": "RSA Conference 2023",
+        "event_starts_on": "2023-04-24",
+        "image": "ykqvowx9t8vbpi0qa4sd",
+        "permalink": "rsa-conference-2022-8c5d"
+      }
+    ],
+    "featured_list": [
+      {
+        "org_funding_total": {
+          "currency": "USD",
+          "formatted_value": "$5.14B",
+          "value": 5141607349,
+          "value_usd": 5141607349
+        },
+        "org_num": 614,
+        "org_num_investors": 480,
+        "title": "Greater New York Area Network Security Companies"
+      },
+      {
+        "org_funding_total": {
+          "currency": "USD",
+          "formatted_value": "$61.08B",
+          "value": 61084603680,
+          "value_usd": 61084603680
+        },
+        "org_num": 2456,
+        "org_num_investors": 8958,
+        "title": "SaaS Acquired Companies With Less Than $1B in Revenue"
+      },
+      {
+        "org_funding_total": {
+          "currency": "USD",
+          "formatted_value": "$519.45B",
+          "value": 519454918816,
+          "value_usd": 519454918816
+        },
+        "org_num": 9972,
+        "org_num_investors": 39339,
+        "title": "United States Acquired Companies With Fewer Than 1000 Employees (Top 10K)"
+      },
+      {
+        "org_funding_total": {
+          "currency": "USD",
+          "formatted_value": "$94.01B",
+          "value": 94007079538,
+          "value_usd": 94007079538
+        },
+        "org_num": 4211,
+        "org_num_investors": 13856,
+        "title": "Acquired SaaS Companies"
+      }
+    ],
+    "founded_date": "2014-01-01",
+    "founders": [
+      {
+        "id": "derry-shribman",
+        "type": "person",
+        "value": "Derry Shribman"
+      },
+      {
+        "id": "ofer-vilenski",
+        "type": "person",
+        "value": "Ofer Vilenski"
+      }
+    ],
+    "full_description": "Bright Data is a data collection platform that helps businesses gather publicly available web data in an ethical manner. It transforms unstructured data into structured formats, enabling organizations to gain insights into consumer interactions with their brands and competitors.",
+    "headquarters_regions": [
+      {
+        "id": "greater-new-york-area",
+        "value": "Greater New York Area"
+      },
+      {
+        "id": "east-coast-united-states",
+        "value": "East Coast"
+      },
+      {
+        "id": "northeastern-united-states",
+        "value": "Northeastern US"
+      }
+    ],
+    "id": "brightdata",
+    "image": "https://images.crunchbase.com/image/upload/c_pad,h_170,w_170,f_auto,b_white,q_auto:eco,dpr_4/rztqcpgudledqlc4mfpe",
+    "industries": [
+      {
+        "id": "business-intelligence",
+        "value": "Business Intelligence"
+      },
+      {
+        "id": "cloud-data-services",
+        "value": "Cloud Data Services"
+      },
+      {
+        "id": "data-collection-and-labeling",
+        "value": "Data Collection and Labeling"
+      },
+      {
+        "id": "network-security",
+        "value": "Network Security"
+      },
+      {
+        "id": "saas-5c4e",
+        "value": "SaaS"
+      }
+    ],
+    "input": {
+      "url": "https://www.crunchbase.com/organization/brightdata"
+    },
+    "ipo_status": "private",
+    "ipqwery": {
+      "ipqwery_num_patent_granted": 199,
+      "ipqwery_num_trademark_registered": 18,
+      "ipqwery_popular_trademark_class": "c38",
+      "trademark_class_text": "Communication Services"
+    },
+    "legal_name": "Bright Data",
+    "location": [
+      {
+        "name": "New York",
+        "permalink": "new-york-new-york"
+      },
+      {
+        "name": "New York",
+        "permalink": "new-york-united-states"
+      },
+      {
+        "name": "United States",
+        "permalink": "united-states"
+      },
+      {
+        "name": "North America",
+        "permalink": "north-america"
+      }
+    ],
+    "monthly_visits": 865525,
+    "monthly_visits_growth": -0.0668556260889065,
+    "name": "Bright Data",
+    "news": [
+      {
+        "date": "2025-05-08",
+        "organization": "Bright Data",
+        "publisher": "Start small, think big: Scaling AI with confidence | CIO",
+        "title": "Training data: The key to successful AI models",
+        "url": "https://www.cio.com/article/3980243/training-data-the-key-to-successful-ai-models.html"
+      },
+      {
+        "date": "2025-04-28",
+        "organization": "Bright Data",
+        "publisher": "EIN Presswire",
+        "title": "With 4.3M+ Tech Community Votes, HackerNoon Announces the Winners of Startups of The Year 2024",
+        "url": "https://www.einpresswire.com/article/803372315/with-4-3m-tech-community-votes-hackernoon-announces-the-winners-of-startups-of-the-year-2024"
+      },
+      {
+        "date": "2025-03-13",
+        "organization": "Bright Data",
+        "publisher": "Digital Journal",
+        "title": "5 tips for acquiring data from the open web to train your team’s AI agents",
+        "url": "https://www.digitaljournal.com/tech-science/5-tips-for-acquiring-data-from-the-open-web-to-train-your-teams-ai-agents/article"
+      },
+      {
+        "date": "2025-03-12",
+        "organization": "Bright Data",
+        "publisher": "Search Engine Journal",
+        "title": "Google AIO: 4 Ways To Find Out If Your Brand Is Visible In Generative AI [With Prompts] via @sejournal, @bright_data",
+        "url": "https://www.searchenginejournal.com/google-aio-serp-rankings-brightdata-spa/541172/"
+      },
+      {
+        "date": "2025-02-04",
+        "organization": "Bright Data",
+        "publisher": "Search Engine Journal",
+        "title": "5 New SEO Ranking Challenges You’re Facing Right Now [& A Fix] via @sejournal, @bright_data",
+        "url": "https://www.searchenginejournal.com/new-seo-ranking-challenges-brightdata-spa/538084/"
+      },
+      {
+        "date": "2024-11-29",
+        "organization": "Bright Data",
+        "publisher": "Media Post",
+        "title": "X Corp. Can Revive Scraping Battle With Bright Data, Judge Rules",
+        "url": "https://www.mediapost.com/publications/article/401510/x-corp-can-revive-scraping-battle-with-bright-dat.html"
+      },
+      {
+        "date": "2024-11-27",
+        "organization": "Bright Data",
+        "publisher": "Google Patent",
+        "title": "System and Method for Improving Internet Communication by Using Intermediate …",
+        "url": "https://patents.google.com/patent/US20250097321A1/en"
+      },
+      {
+        "date": "2024-11-11",
+        "organization": "Bright Data",
+        "publisher": "EIN Presswire",
+        "title": "HackerNoon’s ‘Startups of the Year’ Now Accepting Company Nominations in Programming Industry",
+        "url": "https://www.einpresswire.com/article/757867373/hackernoon-s-startups-of-the-year-now-accepting-company-nominations-in-programming-industry"
+      },
+      {
+        "date": "2024-11-06",
+        "organization": "Bright Data",
+        "publisher": "Google Patent",
+        "title": "System and Method for Improving Content Fetching by Selecting Tunnel Devices",
+        "url": "https://patents.google.com/patent/US20250062930A1/en"
+      },
+      {
+        "date": "2024-10-24",
+        "organization": "Bright Data",
+        "title": "Write About Data Collection for AI and LLM Training, Win from $2500",
+        "url": "https://hackernoon.com/write-about-data-collection-for-ai-and-llm-training-win-from-$2500"
+      }
+    ],
+    "num_contacts": 42,
+    "num_contacts_linkedin": 42,
+    "num_employee_profiles": 347,
+    "num_employees": "251-500",
+    "num_event_appearances": 1,
+    "num_news": 106,
+    "num_sub_organizations": 1,
+    "operating_status": "active",
+    "overview_highlights": {
+      "num_contacts": 42,
+      "num_current_positions": 347,
+      "num_org_similarities": 9
+    },
+    "people_highlights": {
+      "num_contacts": 42,
+      "num_current_positions": "347"
+    },
+    "products_and_services": [
+      {
+        "product_description": "A network of over 72 million real residential IPs from 195 countries, allowing access to any website content while avoiding IP bans and CAPTCHAs.",
+        "product_name": "Residential Proxies"
+      },
+      {
+        "product_description": "A network of 770,000+ datacenter IPs offering global coverage and the ability to target specific countries and cities for reliable data collection.",
+        "product_name": "Datacenter Proxies"
+      },
+      {
+        "product_description": "A network of 7 million+ real 3G/4G mobile IPs from around the world, enabling users to see the web as real mobile users and bypass IP location blocks and CAPTCHAs.",
+        "product_name": "Mobile Proxies"
+      },
+      {
+        "product_description": "700,000+ static residential IPs assigned by ISPs, providing long sessions and exclusive use for as long as needed.",
+        "product_name": "ISP Proxies"
+      },
+      {
+        "product_description": "Proxies that constantly replace your IP address to avoid detection and blocking, with 99.99% uptime and easy management through a Proxy Manager.",
+        "product_name": "Rotating Proxies"
+      },
+      {
+        "product_description": "Proxies that hide your location and IP address, allowing access to public web content anonymously without detection or blocking.",
+        "product_name": "Anonymous Proxies"
+      }
+    ],
+    "region": "New York",
+    "semrush_last_updated": "2025-03-10",
+    "semrush_location_list": [
+      {
+        "locations": [
+          {
+            "name": "United States",
+            "permalink": "united-states"
+          },
+          {
+            "name": "North America",
+            "permalink": "north-america"
+          }
+        ],
+        "rank": 78972,
+        "rank_mom_pct": -0.29315097919874,
+        "visits_mom_pct": "0.532600690282611",
+        "visits_pct": 0.12261690881257
+      },
+      {
+        "locations": [
+          {
+            "name": "Kenya",
+            "permalink": "kenya-9f51"
+          },
+          {
+            "name": "Africa",
+            "permalink": "africa"
+          }
+        ],
+        "rank": 4895,
+        "rank_mom_pct": 0.333061002178649,
+        "visits_mom_pct": "-0.170564405493956",
+        "visits_pct": 0.118751047052367
+      },
+      {
+        "locations": [
+          {
+            "name": "India",
+            "permalink": "india"
+          },
+          {
+            "name": "Asia",
+            "permalink": "asia"
+          }
+        ],
+        "rank": 35569,
+        "rank_mom_pct": 0.346035950804163,
+        "visits_mom_pct": "-0.347245118511192",
+        "visits_pct": 0.0823465526703446
+      },
+      {
+        "locations": [
+          {
+            "name": "Indonesia",
+            "permalink": "indonesia"
+          },
+          {
+            "name": "Asia",
+            "permalink": "asia"
+          }
+        ],
+        "rank": 20227,
+        "rank_mom_pct": -0.232808647828561,
+        "visits_mom_pct": "0.409703359061937",
+        "visits_pct": 0.0605609312267121
+      },
+      {
+        "locations": [
+          {
+            "name": "Russian Federation",
+            "permalink": "russian-federation"
+          },
+          {
+            "name": "Europe",
+            "permalink": "europe"
+          }
+        ],
+        "rank": 64580,
+        "rank_mom_pct": -0.140960666161193,
+        "visits_mom_pct": "0.467570097624036",
+        "visits_pct": 0.0380370295485399
+      }
+    ],
+    "semrush_visits_latest_month": 865525,
+    "semrush_visits_mom_pct": -0.0668556260889065,
+    "siftery_products": [
+      {
+        "product_num_customers": 439507,
+        "status": "not_using",
+        "title": "HTML5"
+      },
+      {
+        "status": "using",
+        "title": "Adobe Fonts"
+      },
+      {
+        "status": "not_using",
+        "title": "jQuery"
+      },
+      {
+        "status": "using",
+        "title": "Google Tag Manager"
+      },
+      {
+        "status": "using",
+        "title": "Cloudflare CDN"
+      },
+      {
+        "status": "using",
+        "title": "Wordpress"
+      },
+      {
+        "status": "using",
+        "title": "Bootstrap"
+      },
+      {
+        "status": "using",
+        "title": "HubSpot Marketing Hub"
+      },
+      {
+        "status": "not_using",
+        "title": "Google Analytics"
+      },
+      {
+        "status": "not_using",
+        "title": "F5 NGINX"
+      }
+    ],
+    "similar_companies": [
+      {
+        "link": "https://www.crunchbase.com/organization/nefeli-networks",
+        "name": "Nefeli Networks"
+      },
+      {
+        "link": "https://www.crunchbase.com/organization/cedexis",
+        "name": "Cedexis"
+      },
+      {
+        "link": "https://www.crunchbase.com/organization/tassl",
+        "name": "Tassl"
+      },
+      {
+        "link": "https://www.crunchbase.com/organization/kloudless",
+        "name": "Kloudless"
+      },
+      {
+        "link": "https://www.crunchbase.com/organization/redshield-security",
+        "name": "RedShield Security"
+      },
+      {
+        "link": "https://www.crunchbase.com/organization/clearbrain",
+        "name": "ClearBrain"
+      },
+      {
+        "link": "https://www.crunchbase.com/organization/appfolio",
+        "name": "AppFolio"
+      },
+      {
+        "link": "https://www.crunchbase.com/organization/capture2",
+        "name": "Capture2"
+      },
+      {
+        "link": "https://www.crunchbase.com/organization/locomex",
+        "name": "LOCOMeX"
+      }
+    ],
+    "social_media_links": [
+      "https://www.facebook.com/brightdataco",
+      "https://www.linkedin.com/company/bright-data",
+      "https://twitter.com/bright_data"
+    ],
+    "sub_organizations": [
+      {
+        "ownee": "Bright Insights",
+        "ownee_permalink": "bright-insights",
+        "ownership_type": "division",
+        "title": "Bright Data owns Bright Insights"
+      }
+    ],
+    "technology_highlights": {
+      "builtwith_num_technologies_used": 61,
+      "semrush_visits_latest_month": 865525,
+      "semrush_visits_mom_pct": -0.0668556260889065,
+      "siftery_num_products": 23
+    },
+    "timestamp": "2025-05-27T19:50:47.905Z",
+    "total_active_products": 23,
+    "type": "company",
+    "url": "https://www.crunchbase.com/organization/brightdata",
+    "uuid": "cc387f65-4f27-3957-c2f4-37800478e57e",
+    "web_traffic_by_semrush": {
+      "bounce_rate_growth_pct": null,
+      "bounce_rate_pct": null,
+      "global_traffic_rank": null,
+      "monthly_rank_growth_pct": null,
+      "page_views_per_visit": null,
+      "page_views_per_visit_growth_pct": null,
+      "visit_duration": null,
+      "visit_duration_growth_pct": null
+    },
+    "website": "https://brightdata.com"
+  }
+]
