@@ -1,0 +1,77 @@
+{
+  "@context": {
+    "know": "https://know.dev/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "count": {
+      "@id": "know:count",
+      "@type": "xsd:integer"
+    },
+    "followees": {
+      "@id": "know:followees",
+      "@type": "know:Collection"
+    },
+    "followers": {
+      "@id": "know:followers",
+      "@type": "know:Collection"
+    },
+    "id": {
+      "@id": "know:id",
+      "@type": "xsd:string"
+    },
+    "image": {
+      "@id": "know:image",
+      "@type": "@id"
+    },
+    "link": {
+      "@id": "know:link",
+      "@type": "@id"
+    },
+    "name": {
+      "@id": "know:name",
+      "@type": "xsd:string"
+    },
+    "posts": {
+      "@id": "know:posts",
+      "@type": "know:Collection"
+    },
+    "subscriptions": {
+      "@id": "know:subscriptions",
+      "@type": "know:Collection"
+    },
+    "summary": {
+      "@id": "know:summary",
+      "@language": "en"
+    },
+    "title": {
+      "@id": "know:title",
+      "@language": "en"
+    }
+  },
+  "@id": "https://x.com/bright_init",
+  "@type": [
+    "know:UserProfile",
+    "know:UserAccount"
+  ],
+  "id": "1425359125425397772",
+  "name": "bright_init",
+  "title": "thebrightinitiative",
+  "summary": "The Bright Initiative was established to drive positive change in the world, using publicly available online data.",
+  "image": null,
+  "link": "http://www.brightinitiative.com/",
+  "followees": {
+    "@type": "know:Collection",
+    "count": 33
+  },
+  "followers": {
+    "@type": "know:Collection",
+    "count": 65
+  },
+  "posts": {
+    "@type": "know:Collection",
+    "count": 73
+  },
+  "subscriptions": {
+    "@type": "know:Collection",
+    "count": 0
+  }
+}

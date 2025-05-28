@@ -36,7 +36,8 @@ export BRIGHTDATA_API_KEY="..."
 ### Fetching X Profiles
 
 ```bash
-asimov-brightdata-fetcher https://x.com/bright_init
+asimov-brightdata-fetcher https://x.com/bright_init   # JSON
+asimov-brightdata-importer https://x.com/bright_init  # JSON-LD
 ```
 
 ### Fetching LinkedIn Profiles
@@ -99,7 +100,7 @@ LinkedIn | `https://www.linkedin.com/company/` | ✅ | 🚧
 &nbsp; | `https://www.linkedin.com/pulse/` | ✅ | 🚧
 Walmart | `https://www.walmart.com/global/seller/` | ✅ | 🚧
 &nbsp; | `https://www.walmart.com/ip/` | ✅ | 🚧
-X (Twitter) | `https://x.com/` | ✅ | 🚧
+X (Twitter) | `https://x.com/` | ✅ | ✅
 Yahoo | `https://finance.yahoo.com/quote/` | ✅ | 🚧
 YouTube | `https://www.youtube.com/@` | ✅ | 🚧
 &nbsp; | `https://www.youtube.com/watch?v=` | ✅ | 🚧
