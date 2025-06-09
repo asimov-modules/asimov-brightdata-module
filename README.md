@@ -1,8 +1,10 @@
 # ASIMOV Bright Data Module
 
 [![License](https://img.shields.io/badge/license-Public%20Domain-blue.svg)](https://unlicense.org)
-[![Compatibility](https://img.shields.io/badge/rust-1.85%2B-blue)](https://blog.rust-lang.org/2025/02/20/Rust-1.85.0/)
-[![Package](https://img.shields.io/crates/v/asimov-brightdata-module)](https://crates.io/crates/asimov-brightdata-module)
+[![Package on Crates.io](https://img.shields.io/crates/v/asimov-brightdata-module.svg)](https://crates.io/crates/asimov-brightdata-module)
+[![Package on PyPI](https://img.shields.io/pypi/v/asimov-brightdata-module.svg)](https://pypi.org/project/asimov-brightdata-module)
+[![Package on RubyGems](https://img.shields.io/gem/v/asimov-brightdata-module.svg)](https://rubygems.org/gems/asimov-brightdata-module)
+[![Package on NPM](https://img.shields.io/npm/v/asimov-brightdata-module.svg)](https://npmjs.com/package/asimov-brightdata-module)
 
 [ASIMOV] module for data import powered by the [Bright Data] web data platform.
 
@@ -14,12 +16,31 @@
 - Collects the raw JSON data via the Bright Data API (requires an API key).
 - Constructs a semantic knowledge graph based on the [KNOW] ontology.
 - Supports plain JSON output as well as [RDF] output in the form of JSON-LD.
+- Distributed as a standalone static binary with zero runtime dependencies.
 
 ## 🛠️ Prerequisites
 
-- [Rust](https://rust-lang.org) 1.85+ (2024 edition)
+- [Rust] 1.85+ (2024 edition) if building from source code
 
 ## ⬇️ Installation
+
+### Installation from PyPI
+
+```bash
+pip install -U asimov-brightdata-module
+```
+
+### Installation from RubyGems
+
+```bash
+gem install asimov-brightdata-module
+```
+
+### Installation from NPM
+
+```bash
+npm install -g asimov-brightdata-module
+```
 
 ### Installation from Source Code
 
@@ -123,5 +144,10 @@ git clone https://github.com/asimov-modules/asimov-brightdata-module.git
 [ASIMOV]: https://github.com/asimov-platform
 [Bright Data]: https://brightdata.com/products/web-scraper
 [Bright Data API key]: https://docs.brightdata.com/general/account/api-token
+[JSON-LD]: https://json-ld.org
 [KNOW]: https://github.com/know-ontology
+[NPM]: https:/npmjs.org
+[Python]: https://python.org
 [RDF]: https://github.com/rust-rdf
+[Ruby]: https://ruby-lang.org
+[Rust]: https://rust-lang.org
