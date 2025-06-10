@@ -1,0 +1,15 @@
+# See: https://github.com/asimov-modules/asimov-template-module/blob/master/.asimov/module.yaml
+---
+name: brightdata
+label: Bright Data
+summary: Data import powered by the Bright Data web data platform.
+links:
+  - https://github.com/asimov-modules/asimov-brightdata-module
+  - https://crates.io/crates/asimov-brightdata-module
+  - https://pypi.org/project/asimov-brightdata-module
+  - https://rubygems.org/gems/asimov-brightdata-module
+  - https://npmjs.com/package/asimov-brightdata-module
+
+flows:
+  - asimov-brightdata-fetcher
+  - asimov-brightdata-importer
