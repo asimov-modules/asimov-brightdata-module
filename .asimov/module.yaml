@@ -10,6 +10,35 @@ links:
   - https://rubygems.org/gems/asimov-brightdata-module
   - https://npmjs.com/package/asimov-brightdata-module
 
-flows:
-  - asimov-brightdata-fetcher
-  - asimov-brightdata-importer
+provides:
+  flows:
+    - asimov-brightdata-fetcher
+    - asimov-brightdata-importer
+
+handles:
+  url_prefixes:
+    - https://airbnb.com/rooms/
+    - https://amazon.com/
+    - https://amazon.com/sp?seller=
+    - https://crunchbase.com/organization/
+    - https://ebay.com/itm/
+    - https://facebook.com/events/
+    - https://facebook.com/groups/
+    - https://facebook.com/marketplace/item/
+    - https://facebook.com/share/p/
+    - https://finance.yahoo.com/quote/
+    - https://google.com/shopping/product/
+    - https://indeed.com/cmp/
+    - https://instagram.com/
+    - https://instagram.com/p/
+    - https://instagram.com/reel/
+    - https://linkedin.com/company/
+    - https://linkedin.com/in/
+    - https://linkedin.com/jobs/
+    - https://linkedin.com/posts/
+    - https://linkedin.com/pulse/
+    - https://walmart.com/global/seller/
+    - https://walmart.com/ip/
+    - https://x.com/
+    - https://youtube.com/@
+    - https://youtube.com/watch?v=
