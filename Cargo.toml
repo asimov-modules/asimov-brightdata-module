@@ -2,7 +2,7 @@
 
 [package]
 name = "asimov-brightdata-module"
-version = "0.0.3"
+version = "0.0.4"
 authors = ["ASIMOV Protocol <support@asimov.so>"]
 edition = "2024"
 #rust-version = "1.85"
