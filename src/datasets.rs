@@ -1,6 +1,6 @@
 // This is free and unencumbered software released into the public domain.
 
-use crate::dataset::Dataset;
+use crate::{dataset::Dataset, jq};
 
 pub static URL_PREFIX_TO_DATASET: [(&str, Dataset); 26] = [
     (
@@ -8,6 +8,7 @@ pub static URL_PREFIX_TO_DATASET: [(&str, Dataset); 26] = [
         Dataset {
             id: "gd_lmrpz3vxmz972ghd7",
             label: "Yahoo Finance",
+            jq_filter: jq::yahoo_finance,
         },
     ),
     (
@@ -15,6 +16,7 @@ pub static URL_PREFIX_TO_DATASET: [(&str, Dataset); 26] = [
         Dataset {
             id: "gd_ld7ll037kqy322v05",
             label: "Airbnb",
+            jq_filter: jq::airbnb_rooms,
         },
     ),
     (
@@ -22,6 +24,7 @@ pub static URL_PREFIX_TO_DATASET: [(&str, Dataset); 26] = [
         Dataset {
             id: "gd_l7q7dkf244hwjntr0",
             label: "Amazon",
+            jq_filter: jq::amazon,
         },
     ),
     (
@@ -29,6 +32,7 @@ pub static URL_PREFIX_TO_DATASET: [(&str, Dataset); 26] = [
         Dataset {
             id: "gd_lhotzucw1etoe5iw1k",
             label: "Amazon",
+            jq_filter: jq::amazon_seller,
         },
     ),
     (
@@ -36,6 +40,7 @@ pub static URL_PREFIX_TO_DATASET: [(&str, Dataset); 26] = [
         Dataset {
             id: "gd_l1vijqt9jfj7olije",
             label: "Crunchbase",
+            jq_filter: jq::crunchbase_org,
         },
     ),
     (
@@ -43,6 +48,7 @@ pub static URL_PREFIX_TO_DATASET: [(&str, Dataset); 26] = [
         Dataset {
             id: "gd_ltr9mjt81n0zzdk1fb",
             label: "eBay",
+            jq_filter: jq::ebay_item,
         },
     ),
     (
@@ -50,6 +56,7 @@ pub static URL_PREFIX_TO_DATASET: [(&str, Dataset); 26] = [
         Dataset {
             id: "gd_m14sd0to1jz48ppm51",
             label: "Facebook",
+            jq_filter: jq::facebook_events,
         },
     ),
     (
@@ -57,6 +64,7 @@ pub static URL_PREFIX_TO_DATASET: [(&str, Dataset); 26] = [
         Dataset {
             id: "gd_lz11l67o2cb3r0lkj3",
             label: "Facebook",
+            jq_filter: jq::facebook_groups,
         },
     ),
     (
@@ -64,6 +72,7 @@ pub static URL_PREFIX_TO_DATASET: [(&str, Dataset); 26] = [
         Dataset {
             id: "gd_lvt9iwuh6fbcwmx1a",
             label: "Facebook",
+            jq_filter: jq::facebook_marketplace_item,
         },
     ),
     (
@@ -71,6 +80,7 @@ pub static URL_PREFIX_TO_DATASET: [(&str, Dataset); 26] = [
         Dataset {
             id: "gd_lyclm1571iy3mv57zw",
             label: "Facebook",
+            jq_filter: jq::facebook_share_p,
         },
     ),
     (
@@ -78,6 +88,7 @@ pub static URL_PREFIX_TO_DATASET: [(&str, Dataset); 26] = [
         Dataset {
             id: "gd_ltppk50q18kdw67omz",
             label: "Google Shopping",
+            jq_filter: jq::google_shopping_product,
         },
     ),
     (
@@ -85,6 +96,7 @@ pub static URL_PREFIX_TO_DATASET: [(&str, Dataset); 26] = [
         Dataset {
             id: "gd_l7qekxkv2i7ve6hx1s",
             label: "Indeed",
+            jq_filter: jq::indeed_cmp,
         },
     ),
     (
@@ -92,6 +104,7 @@ pub static URL_PREFIX_TO_DATASET: [(&str, Dataset); 26] = [
         Dataset {
             id: "gd_l1vikfch901nx3by4",
             label: "Instagram",
+            jq_filter: jq::instagram_profile,
         },
     ),
     (
@@ -99,6 +112,7 @@ pub static URL_PREFIX_TO_DATASET: [(&str, Dataset); 26] = [
         Dataset {
             id: "gd_lk5ns7kz21pck8jpis",
             label: "Instagram",
+            jq_filter: jq::instagram_p,
         },
     ),
     (
@@ -106,6 +120,7 @@ pub static URL_PREFIX_TO_DATASET: [(&str, Dataset); 26] = [
         Dataset {
             id: "gd_lyclm20il4r5helnj",
             label: "Instagram",
+            jq_filter: jq::instagram_reel,
         },
     ),
     (
@@ -113,6 +128,7 @@ pub static URL_PREFIX_TO_DATASET: [(&str, Dataset); 26] = [
         Dataset {
             id: "gd_l1vikfnt1wgvvqz95w",
             label: "LinkedIn",
+            jq_filter: jq::linkedin_company,
         },
     ),
     //("https://www.linkedin.com/feed/update/", "gd_lyy3tktm25m4avu764"), // TODO
@@ -121,6 +137,7 @@ pub static URL_PREFIX_TO_DATASET: [(&str, Dataset); 26] = [
         Dataset {
             id: "gd_l1viktl72bvl7bjuj0",
             label: "LinkedIn",
+            jq_filter: jq::linkedin_profile,
         },
     ),
     (
@@ -128,6 +145,7 @@ pub static URL_PREFIX_TO_DATASET: [(&str, Dataset); 26] = [
         Dataset {
             id: "gd_lpfll7v5hcqtkxl6l",
             label: "LinkedIn",
+            jq_filter: jq::linkedin_jobs,
         },
     ),
     (
@@ -135,6 +153,7 @@ pub static URL_PREFIX_TO_DATASET: [(&str, Dataset); 26] = [
         Dataset {
             id: "gd_lyy3tktm25m4avu764",
             label: "LinkedIn",
+            jq_filter: jq::linkedin_posts,
         },
     ),
     (
@@ -142,6 +161,7 @@ pub static URL_PREFIX_TO_DATASET: [(&str, Dataset); 26] = [
         Dataset {
             id: "gd_lyy3tktm25m4avu764",
             label: "LinkedIn",
+            jq_filter: jq::linkedin_pulse,
         },
     ),
     (
@@ -149,6 +169,7 @@ pub static URL_PREFIX_TO_DATASET: [(&str, Dataset); 26] = [
         Dataset {
             id: "gd_m7ke48w81ocyu4hhz0",
             label: "Walmart",
+            jq_filter: jq::walmart_seller,
         },
     ),
     (
@@ -156,6 +177,7 @@ pub static URL_PREFIX_TO_DATASET: [(&str, Dataset); 26] = [
         Dataset {
             id: "gd_l95fol7l1ru6rlo116",
             label: "Walmart",
+            jq_filter: jq::walmart_ip,
         },
     ),
     (
@@ -163,6 +185,7 @@ pub static URL_PREFIX_TO_DATASET: [(&str, Dataset); 26] = [
         Dataset {
             id: "gd_lk538t2k2p1k3oos71",
             label: "YouTube",
+            jq_filter: jq::youtube_profile,
         },
     ),
     (
@@ -170,6 +193,7 @@ pub static URL_PREFIX_TO_DATASET: [(&str, Dataset); 26] = [
         Dataset {
             id: "gd_lk56epmy2i5g7lzu0k",
             label: "YouTube",
+            jq_filter: jq::youtube_watch,
         },
     ),
     (
@@ -177,6 +201,7 @@ pub static URL_PREFIX_TO_DATASET: [(&str, Dataset); 26] = [
         Dataset {
             id: "gd_lwxmeb2u1cniijd7t4",
             label: "X",
+            jq_filter: jq::x_profile,
         },
     ),
     (
@@ -184,6 +209,7 @@ pub static URL_PREFIX_TO_DATASET: [(&str, Dataset); 26] = [
         Dataset {
             id: "gd_lwxkxvnf1cynvib9co",
             label: "X",
+            jq_filter: jq::x_status,
         },
     ),
 ];

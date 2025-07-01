@@ -3,6 +3,18 @@
 pub use ::jq::*;
 
 #[cfg(feature = "std")]
+pub fn default_filter() -> &'static JsonFilter {
+    use std::sync::OnceLock;
+    static ONCE: OnceLock<JsonFilter> = OnceLock::new();
+    ONCE.get_or_init(|| ". | select(false)".parse().unwrap()) // Returns empty output
+}
+
+#[cfg(not(feature = "std"))]
+pub fn default_filter() -> JsonFilter {
+    ". | select(false)".parse().unwrap() // Returns empty output
+}
+
+#[cfg(feature = "std")]
 pub fn airbnb_rooms() -> &'static JsonFilter {
     use std::sync::OnceLock;
     static ONCE: OnceLock<JsonFilter> = OnceLock::new();
@@ -224,6 +236,18 @@ pub fn linkedin_posts() -> &'static JsonFilter {
     use std::sync::OnceLock;
     static ONCE: OnceLock<JsonFilter> = OnceLock::new();
     ONCE.get_or_init(|| include_str!("jq/linkedin_posts.jq").parse().unwrap())
+}
+
+#[cfg(not(feature = "std"))]
+pub fn linkedin_posts() -> JsonFilter {
+    include_str!("jq/linkedin_posts.jq").parse().unwrap()
+}
+
+#[cfg(feature = "std")]
+pub fn linkedin_pulse() -> &'static JsonFilter {
+    use std::sync::OnceLock;
+    static ONCE: OnceLock<JsonFilter> = OnceLock::new();
+    ONCE.get_or_init(|| include_str!("jq/linkedin_pulse.jq").parse().unwrap())
 }
 
 #[cfg(not(feature = "std"))]
