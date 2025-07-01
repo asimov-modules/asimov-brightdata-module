@@ -64,20 +64,24 @@ asimov-brightdata-importer https://x.com/bright_init  # JSON-LD
 ### Fetching LinkedIn Profiles
 
 ```bash
-asimov-brightdata-fetcher https://www.linkedin.com/in/orlenchner/
-asimov-brightdata-fetcher https://www.linkedin.com/company/bright-data/
+asimov-brightdata-fetcher https://www.linkedin.com/in/orlenchner
+asimov-brightdata-importer https://www.linkedin.com/in/orlenchner
+asimov-brightdata-fetcher https://www.linkedin.com/company/bright-data
+asimov-brightdata-importer https://www.linkedin.com/company/bright-data
 ```
 
 ### Fetching Crunchbase Profiles
 
 ```bash
 asimov-brightdata-fetcher https://www.crunchbase.com/organization/brightdata
+asimov-brightdata-importer https://www.crunchbase.com/organization/brightdata
 ```
 
 ### Fetching Amazon Products
 
 ```bash
 asimov-brightdata-fetcher https://www.amazon.com/Master-Algorithm-Ultimate-Learning-Machine/dp/0465094279
+asimov-brightdata-importer https://www.amazon.com/Master-Algorithm-Ultimate-Learning-Machine/dp/0465094279
 ```
 
 ## ⚙ Configuration
@@ -98,34 +102,34 @@ asimov-brightdata-fetcher https://www.amazon.com/Master-Algorithm-Ultimate-Learn
 
 ### Supported Datasets
 
-Dataset | URL Prefix | JSON | RDF
-:------ | :--------- | :--: | :--:
-Airbnb | `https://www.airbnb.com/rooms/` | ✅ | 🚧
-Amazon | `https://www.amazon.com/` | ✅ | 🚧
-&nbsp; | `https://www.amazon.com/sp?seller=` | ✅ | 🚧
-Crunchbase | `https://www.crunchbase.com/organization/` | ✅ | 🚧
-eBay | `https://www.ebay.com/itm/` | ✅ | 🚧
-Facebook | `https://www.facebook.com/events/` | ✅ | 🚧
-&nbsp; | `https://www.facebook.com/groups/` | ✅ | 🚧
-&nbsp; | `https://www.facebook.com/marketplace/item/` | ✅ | 🚧
-&nbsp; | `https://www.facebook.com/share/p/` | ✅ | 🚧
-Google | `https://www.google.com/shopping/product/` | ✅ | 🚧
-Indeed | `https://www.indeed.com/cmp/` | ✅ | 🚧
-Instagram | `https://www.instagram.com/` | ✅ | 🚧
-&nbsp; | `https://www.instagram.com/p/` | ✅ | 🚧
-&nbsp; | `https://www.instagram.com/reel/` | ✅ | 🚧
-LinkedIn | `https://www.linkedin.com/company/` | ✅ | 🚧
-&nbsp; | `https://www.linkedin.com/in/` | ✅ | 🚧
-&nbsp; | `https://www.linkedin.com/jobs/` | ✅ | 🚧
-&nbsp; | `https://www.linkedin.com/posts/` | ✅ | 🚧
-&nbsp; | `https://www.linkedin.com/pulse/` | ✅ | 🚧
-Walmart | `https://www.walmart.com/global/seller/` | ✅ | 🚧
-&nbsp; | `https://www.walmart.com/ip/` | ✅ | 🚧
-X (Twitter) | `https://x.com/` | ✅ | ✅
-Yahoo | `https://finance.yahoo.com/quote/` | ✅ | 🚧
-YouTube | `https://www.youtube.com/@` | ✅ | 🚧
-&nbsp; | `https://www.youtube.com/watch?v=` | ✅ | 🚧
-<img width="100" height="1"/> | <img width="550" height="1"/> | <img width="50" height="1"/> | <img width="50" height="1"/>
+| Dataset                       | URL Prefix                                   |             JSON             |             RDF              |
+|:------------------------------|:---------------------------------------------|:----------------------------:|:----------------------------:|
+| Airbnb                        | `https://www.airbnb.com/rooms/`              |              ✅               |              ✅               |
+| Amazon                        | `https://www.amazon.com/`                    |              ✅               |              ✅               |
+| &nbsp;                        | `https://www.amazon.com/sp?seller=`          |              ✅               |              ✅               |
+| Crunchbase                    | `https://www.crunchbase.com/organization/`   |              ✅               |              ✅               |
+| eBay                          | `https://www.ebay.com/itm/`                  |              ✅               |              ✅               |
+| Facebook                      | `https://www.facebook.com/events/`           |              ✅               |              ✅               |
+| &nbsp;                        | `https://www.facebook.com/groups/`           |              ✅               |              ✅               |
+| &nbsp;                        | `https://www.facebook.com/marketplace/item/` |              ✅               |              ✅               |
+| &nbsp;                        | `https://www.facebook.com/share/p/`          |              ✅               |              ✅               |
+| Google                        | `https://www.google.com/shopping/product/`   |              ✅               |              ✅               |
+| Indeed                        | `https://www.indeed.com/cmp/`                |              ✅               |              ✅               |
+| Instagram                     | `https://www.instagram.com/`                 |              ✅               |              ✅               |
+| &nbsp;                        | `https://www.instagram.com/p/`               |              ✅               |              ✅               |
+| &nbsp;                        | `https://www.instagram.com/reel/`            |              ✅               |              ✅               |
+| LinkedIn                      | `https://www.linkedin.com/company/`          |              ✅               |              ✅               |
+| &nbsp;                        | `https://www.linkedin.com/in/`               |              ✅               |              ✅               |
+| &nbsp;                        | `https://www.linkedin.com/jobs/`             |              ✅               |              ✅               |
+| &nbsp;                        | `https://www.linkedin.com/posts/`            |              ✅               |              ✅               |
+| &nbsp;                        | `https://www.linkedin.com/pulse/`            |              ✅               |              ✅               |
+| Walmart                       | `https://www.walmart.com/global/seller/`     |              ✅               |              ✅               |
+| &nbsp;                        | `https://www.walmart.com/ip/`                |              ✅               |              ✅               |
+| X (Twitter)                   | `https://x.com/`                             |              ✅               |              ✅               |
+| Yahoo                         | `https://finance.yahoo.com/quote/`           |              ✅               |              ✅               |
+| YouTube                       | `https://www.youtube.com/@`                  |              ✅               |              ✅               |
+| &nbsp;                        | `https://www.youtube.com/watch?v=`           |              ✅               |              ✅               |
+| <img width="100" height="1"/> | <img width="550" height="1"/>                | <img width="50" height="1"/> | <img width="50" height="1"/> |
 
 ## 👨‍💻 Development
 
@@ -146,7 +150,7 @@ git clone https://github.com/asimov-modules/asimov-brightdata-module.git
 [Bright Data API key]: https://docs.brightdata.com/general/account/api-token
 [JSON-LD]: https://json-ld.org
 [KNOW]: https://github.com/know-ontology
-[NPM]: https:/npmjs.org
+[NPM]: https://npmjs.org
 [Python]: https://python.org
 [RDF]: https://github.com/rust-rdf
 [Ruby]: https://ruby-lang.org
