@@ -4,7 +4,7 @@
 fn main() -> Result<clientele::SysexitsError, Box<dyn std::error::Error>> {
     use asimov_brightdata_module::{
         api::{BrightData, ScrapeInput, ScrapeRequest},
-        find_dataset_for, jq,
+        find_dataset_for,
     };
     use asimov_module::getenv;
     use clientele::SysexitsError::*;
@@ -49,7 +49,7 @@ fn main() -> Result<clientele::SysexitsError, Box<dyn std::error::Error>> {
         // Send the request and block while waiting for the response:
         let request = ScrapeRequest::from(vec![ScrapeInput::from_str(&url).unwrap()]);
         let response = api.scrape_dataset(dataset.id, &request)?;
-        let response = jq::x_profile().filter_json_str(response)?;
+        let response = (dataset.jq_filter)().filter_json_str(response)?;
 
         // Serialize the response data:
         if cfg!(feature = "pretty") {
