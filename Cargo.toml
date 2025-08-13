@@ -38,7 +38,9 @@ tracing = ["dep:tracing-subscriber"]
 unstable = []
 
 [dependencies]
-asimov-module = { version = "25.0.0-dev.8", default-features = false }
+asimov-module = { version = "25.0.0-dev.21", default-features = false, features = [
+	"serde",
+] }
 clientele = { version = "0.3", default-features = false, features = [
     "argfile",
     "dotenv",

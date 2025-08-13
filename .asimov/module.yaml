@@ -10,6 +10,11 @@ links:
   - https://rubygems.org/gems/asimov-brightdata-module
   - https://npmjs.com/package/asimov-brightdata-module
 
+config:
+  variables:
+    - name: brightdata-api-key
+      environment: "BRIGHTDATA_API_KEY"
+
 provides:
   programs:
     - asimov-brightdata-fetcher

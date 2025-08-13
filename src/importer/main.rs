@@ -6,7 +6,6 @@ fn main() -> Result<clientele::SysexitsError, Box<dyn std::error::Error>> {
         api::{BrightData, ScrapeInput, ScrapeRequest},
         find_dataset_for,
     };
-    use asimov_module::getenv;
     use clientele::SysexitsError::*;
     use std::{io::stdout, str::FromStr};
 
@@ -33,11 +32,23 @@ fn main() -> Result<clientele::SysexitsError, Box<dyn std::error::Error>> {
         return Ok(EX_OK);
     }
 
-    // Obtain the Bright Data API key from the environment:
-    let Some(api_key) = getenv::var_secret("BRIGHTDATA_API_KEY") else {
-        return Ok(EX_CONFIG); // not configured
+    let manifest = match asimov_module::ModuleManifest::read_manifest("brightdata") {
+        Ok(manifest) => manifest,
+        Err(e) => {
+            eprintln!("failed to read module manifest: {e}");
+            return Ok(EX_CONFIG);
+        }
     };
-    let api = BrightData::new(api_key);
+
+    // Obtain the Bright Data API key from the environment:
+    let api_key = match manifest.variable("brightdata-api-key", None) {
+        Ok(api_key) => api_key,
+        Err(e) => {
+            eprintln!("failed to get API key: {e}");
+            return Ok(EX_CONFIG); // not configured
+        }
+    };
+    let api = BrightData::new(api_key.into());
 
     // Process each of the given URL arguments:
     for url in urls {
