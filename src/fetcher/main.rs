@@ -32,21 +32,18 @@ fn main() -> Result<clientele::SysexitsError, Box<dyn std::error::Error>> {
         return Ok(EX_OK);
     }
 
-    let manifest = match asimov_module::ModuleManifest::read_manifest("brightdata") {
-        Ok(manifest) => manifest,
-        Err(e) => {
-            eprintln!("failed to read module manifest: {e}");
-            return Ok(EX_CONFIG);
-        }
+    let Ok(manifest) = asimov_module::ModuleManifest::read_manifest("brightdata")
+        .inspect_err(|e| eprintln!("failed to read module manifest: {e}"))
+    else {
+        return Ok(EX_CONFIG);
     };
 
     // Obtain the Bright Data API key from the environment:
-    let api_key = match manifest.variable("brightdata-api-key", None) {
-        Ok(api_key) => api_key,
-        Err(e) => {
-            eprintln!("failed to get API key: {e}");
-            return Ok(EX_CONFIG); // not configured
-        }
+    let Ok(api_key) = manifest
+        .variable("brightdata-api-key", None)
+        .inspect_err(|e| eprintln!("failed to get API key: {e}"))
+    else {
+        return Ok(EX_CONFIG); // not configured
     };
     let api = BrightData::new(api_key.into());
 

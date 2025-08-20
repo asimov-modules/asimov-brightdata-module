@@ -12,7 +12,7 @@ links:
 
 config:
   variables:
-    - name: brightdata-api-key
+    - name: key
       environment: "BRIGHTDATA_API_KEY"
 
 provides:
