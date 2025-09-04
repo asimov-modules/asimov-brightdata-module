@@ -41,7 +41,7 @@ impl FromStr for ScrapeInput {
     }
 }
 
-pub(crate) fn serialize_custom_output_fields<S>(t: &Vec<String>, s: S) -> Result<S::Ok, S::Error>
+pub(crate) fn serialize_custom_output_fields<S>(t: &[String], s: S) -> Result<S::Ok, S::Error>
 where
     S: serde::Serializer,
 {
