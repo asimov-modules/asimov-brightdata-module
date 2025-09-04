@@ -44,6 +44,7 @@ name = "asimov-brightdata-module"
 version = "0.0.4"
 dependencies = [
  "asimov-module",
+ "clap",
  "clientele",
  "colored_json",
  "jq",

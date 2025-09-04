@@ -1,5 +1,22 @@
 // This is free and unencumbered software released into the public domain.
 
+use clap::Parser;
+use clientele::StandardOptions;
+
+/// asimov-brightdata-importer
+#[derive(Debug, Parser)]
+#[command(arg_required_else_help = true)]
+struct Options {
+    #[clap(flatten)]
+    flags: StandardOptions,
+
+    /// The output format.
+    #[arg(value_name = "FORMAT", short = 'o', long)]
+    output: Option<String>,
+
+    urls: Vec<String>,
+}
+
 #[cfg(feature = "std")]
 fn main() -> Result<clientele::SysexitsError, Box<dyn std::error::Error>> {
     use asimov_brightdata_module::{
@@ -13,22 +30,28 @@ fn main() -> Result<clientele::SysexitsError, Box<dyn std::error::Error>> {
     clientele::dotenv().ok();
 
     // Expand wildcards and @argfiles:
-    let args = clientele::args_os()?;
+    let args = asimov_module::args_os()?;
 
-    // Configure logging:
+    // Parse command-line options:
+    let options = Options::parse_from(args);
+
+    // Handle the `--version` flag:
+    if options.flags.version {
+        println!("{} {}", env!("CARGO_PKG_NAME"), env!("CARGO_PKG_VERSION"));
+        return Ok(EX_OK);
+    }
+
+    // Handle the `--license` flag:
+    if options.flags.license {
+        print!("{}", include_str!("../../UNLICENSE"));
+        return Ok(EX_OK);
+    }
+
+    // Configure logging & tracing:
     #[cfg(feature = "tracing")]
-    tracing_subscriber::fmt()
-        .with_writer(std::io::stderr)
-        .with_max_level(tracing_subscriber::filter::LevelFilter::WARN)
-        .init();
+    asimov_module::init_tracing_subscriber(&options.flags).expect("failed to initialize logging");
 
-    // Parse URLs from command-line arguments:
-    let urls: Vec<String> = args
-        .iter()
-        .skip(1)
-        .map(|arg| String::from_str(&arg.to_string_lossy()).unwrap())
-        .collect();
-    if urls.is_empty() {
+    if options.urls.is_empty() {
         return Ok(EX_OK);
     }
 
@@ -48,7 +71,7 @@ fn main() -> Result<clientele::SysexitsError, Box<dyn std::error::Error>> {
     let api = BrightData::new(api_key.into());
 
     // Process each of the given URL arguments:
-    for url in urls {
+    for url in options.urls {
         // Find the appropriate dataset ID based on the URL prefix:
         let Some(dataset) = find_dataset_for(&url) else {
             return Ok(EX_UNAVAILABLE); // not supported
