@@ -2,7 +2,7 @@
 
 [package]
 name = "asimov-brightdata-module"
-version = "0.0.5"
+version = "0.0.6"
 authors = ["ASIMOV Protocol <support@asimov.so>"]
 edition = "2024"
 #rust-version = "1.85"
@@ -14,10 +14,10 @@ repository = "https://github.com/asimov-modules/asimov-brightdata-module"
 license = "Unlicense"
 keywords = ["asimov-module", "asimov", "ai"]
 categories = [
-  "command-line-utilities",
-  "api-bindings",
-  "web-programming::http-client",
-  "text-processing",
+    "command-line-utilities",
+    "api-bindings",
+    "web-programming::http-client",
+    "text-processing",
 ]
 publish = true
 
@@ -27,39 +27,39 @@ all = ["tracing"]
 cli = ["asimov-module/cli", "pretty", "dep:clap", "dep:clientele"]
 pretty = ["dep:colored_json"]
 std = [
-  "asimov-module/std",
-  "clap?/std",
-  "clientele?/std",
-  "jq/std",
-  "serde/std",
-  "tracing-subscriber?/fmt",
-  "tracing-subscriber?/std",
+    "asimov-module/std",
+    "clap?/std",
+    "clientele?/std",
+    "jq/std",
+    "serde/std",
+    "tracing-subscriber?/fmt",
+    "tracing-subscriber?/std",
 ]
 tracing = ["asimov-module/tracing", "dep:tracing-subscriber"]
 unstable = []
 
 [dependencies]
 asimov-module = { version = "25.0.0-dev.21", default-features = false, features = [
-  "serde",
+    "serde",
 ] }
 clap = { version = "4.5", default-features = false, optional = true }
 clientele = { version = "0.3", default-features = false, features = [
-  "argfile",
-  "dotenv",
-  "wild",
+    "argfile",
+    "dotenv",
+    "wild",
 ], optional = true }
 colored_json = { version = "5", default-features = false, optional = true }
 jq = { version = "0.1", default-features = false, features = ["all"] }
 serde = { version = "1", default-features = false, features = ["derive"] }
 serde_json = { version = "1", default-features = false, features = ["alloc"] }
 tracing-subscriber = { version = "0.3", default-features = false, features = [
-  "alloc",
-  "tracing-log",
+    "alloc",
+    "tracing-log",
 ], optional = true }
 ureq = { version = "3.0", default-features = false, features = [
-  "platform-verifier",
-  "rustls",
-  "json",
+    "platform-verifier",
+    "rustls",
+    "json",
 ] }
 
 [profile.release]

@@ -41,7 +41,7 @@ dependencies = [
 
 [[package]]
 name = "asimov-brightdata-module"
-version = "0.0.5"
+version = "0.0.6"
 dependencies = [
  "asimov-module",
  "clap",
