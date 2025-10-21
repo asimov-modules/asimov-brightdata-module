@@ -63,7 +63,7 @@ fn main() -> Result<clientele::SysexitsError, Box<dyn std::error::Error>> {
 
     // Obtain the Bright Data API key from the environment:
     let Ok(api_key) = manifest
-        .variable("brightdata-api-key", None)
+        .variable("key", None)
         .inspect_err(|e| eprintln!("failed to get API key: {e}"))
     else {
         return Ok(EX_CONFIG); // not configured
