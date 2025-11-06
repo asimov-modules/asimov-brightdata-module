@@ -24,7 +24,7 @@ fn main() -> Result<clientele::SysexitsError, Box<dyn std::error::Error>> {
         find_dataset_for,
     };
     use clientele::SysexitsError::*;
-    use std::{io::stdout, str::FromStr};
+    use std::str::FromStr;
 
     // Load environment variables from `.env`:
     clientele::dotenv().ok();
@@ -83,12 +83,7 @@ fn main() -> Result<clientele::SysexitsError, Box<dyn std::error::Error>> {
         let response = (dataset.jq_filter)().filter_json_str(response)?;
 
         // Serialize the response data:
-        if cfg!(feature = "pretty") {
-            colored_json::write_colored_json(&response, &mut stdout())?;
-            println!();
-        } else {
-            println!("{}", serde_json::to_string(&response).unwrap());
-        }
+        println!("{}", response);
     }
 
     Ok(EX_OK)
