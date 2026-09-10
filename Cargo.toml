@@ -67,8 +67,8 @@ strip = true
 lto = "thin"
 
 [[bin]]
-name = "asimov-brightdata-cataloger"
-path = "src/cataloger/main.rs"
+name = "asimov-brightdata-lister"
+path = "src/lister/main.rs"
 required-features = ["cli"]
 
 [[bin]]

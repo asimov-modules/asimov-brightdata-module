@@ -94,7 +94,7 @@ asimov-brightdata-importer https://www.amazon.com/Master-Algorithm-Ultimate-Lear
 
 ### Installed Binaries
 
-- `asimov-brightdata-cataloger`: discovers entities via the Bright Data API
+- `asimov-brightdata-lister`: discovers entities via the Bright Data API
   _(not implemented yet)_
 - `asimov-brightdata-fetcher`: collects JSON data from the Bright Data API
 - `asimov-brightdata-importer`: collects and transforms JSON into JSON-LD
